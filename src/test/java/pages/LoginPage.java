@@ -70,6 +70,7 @@ public class LoginPage {
     public WebElement  signupMobileNumber;
     @FindBy(xpath = "//button[@data-qa='create-account']")
     public WebElement  signupCreateAccountButton;
-
+@FindBy(partialLinkText = "deneme")
+    public WebElement denemeYapiyorum;
 
 }
