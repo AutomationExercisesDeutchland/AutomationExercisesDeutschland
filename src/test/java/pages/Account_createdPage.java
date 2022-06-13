@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class Account_createdPage {
+
     public Account_createdPage() {
 
         PageFactory.initElements(Driver.getDriver(),this);
@@ -85,7 +86,3 @@ public class Account_createdPage {
     @FindBy(xpath = "//*[@href=/logout")
     public WebElement logoutButton;
 
-
-
-    
-}

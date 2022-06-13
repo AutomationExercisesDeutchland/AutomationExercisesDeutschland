@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 public class Brand_productsPoloPage {
+
     public Brand_productsPoloPage(){
 
         PageFactory.initElements(Driver.getDriver(),this);
@@ -32,6 +33,7 @@ public class Brand_productsPoloPage {
 
     @FindBy(className = "btn btn-success chose-modal btn-block")
     public WebElement continueShoppingButton;
+
 
 
 
