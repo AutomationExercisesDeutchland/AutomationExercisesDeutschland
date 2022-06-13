@@ -9,9 +9,10 @@ public class Account_createdPage {
 
     public Account_createdPage() {
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(xpath="//*[@linkText=login]")
+
+    @FindBy(xpath = "//*[@linkText=login]")
     public WebElement signUpTab;
 
     @FindBy(name = "name")
@@ -20,7 +21,7 @@ public class Account_createdPage {
     @FindBy(name = "email")
     public WebElement emailTextBox;
 
-    @FindBy(xpath ="//*[@class=signup]")
+    @FindBy(xpath = "//*[@class=signup]")
     public WebElement signUpButton;
 
     @FindBy(id = "id_gender2")
@@ -86,3 +87,4 @@ public class Account_createdPage {
     @FindBy(xpath = "//*[@href=/logout")
     public WebElement logoutButton;
 
+}
