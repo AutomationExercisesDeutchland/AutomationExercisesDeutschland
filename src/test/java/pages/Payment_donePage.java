@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class payment_donePage {
-    public payment_donePage(){
+public class Payment_donePage {
+    public void payment_donePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
