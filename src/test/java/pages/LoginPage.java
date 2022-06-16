@@ -16,8 +16,9 @@ public class LoginPage {
     public WebElement loginEmailAddress;
     @FindBy(xpath = "//input[@type='password'][1]")
     public WebElement loginPassword;
-    @FindBy(xpath = "//button[@type='submit'][1]")
+    @FindBy(xpath = "//button[@data-qa='login-button']")
     public WebElement loginButton;
+
 
 
     @FindBy(xpath = "//b[contains(text(),'Enter Account Information')]")
@@ -63,6 +64,16 @@ public class LoginPage {
     public WebElement  signupMobileNumber;
     @FindBy(xpath = "//button[@data-qa='create-account']")
     public WebElement  signupCreateAccountButton;
+@FindBy(partialLinkText = "deneme")
+    public WebElement denemeYapiyorum;
 
 
+    @FindBy(xpath = "//h2[contains(text(),'Login to your account')]")
+    public WebElement loginToYourAccountText;
+
+    @FindBy(xpath = "//a[contains(text(),'Continue')]")
+    public WebElement loginContinueButton;
+
+    @FindBy(xpath = "//b[contains(text(),'ali')]")
+    public WebElement loginNameConfirmationText;
 }

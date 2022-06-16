@@ -1,6 +1,7 @@
 package stepdefinations;
 
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -63,6 +64,10 @@ public class US_1_Register_User {
                 SoftAssert softAssert = new SoftAssert();
                 softAssert.assertTrue(allPages.delete_account().deleteMessage.isDisplayed());
                 break;
+            case "Login to your account":
+             Assert.assertEquals(allPages.loginPage().loginToYourAccountText.getText(),string);
+                break;
+
             default:
                 break;
         }
@@ -173,4 +178,10 @@ public class US_1_Register_User {
 
     }
 
+    @And("Click login button")
+    public void Click_Login_Button() {
+        allPages.loginPage().loginButton.click();
+
+
+    }
 }
