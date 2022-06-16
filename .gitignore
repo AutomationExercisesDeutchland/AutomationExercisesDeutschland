@@ -3,3 +3,5 @@
 log/
 runners/
 target/
+*.csv
+*.xml
