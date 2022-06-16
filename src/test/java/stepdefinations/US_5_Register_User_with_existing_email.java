@@ -31,4 +31,16 @@ public class US_5_Register_User_with_existing_email {
     }
 
 
+
+
+    @When("Enter an registered email address and password")
+    public void enterAnRegisteredEmailAddressAndPassword() {
+//        allPages.loginPage().loginEmailAddress
+//                .sendKeys(ConfigurationReader.getProperty("loginEmail"));
+//        allPages.loginPage().loginPassword
+//                .sendKeys(ConfigurationReader.getProperty("loginPassword"));
+//
+//        allPages.loginPage().loginContinueButton.click();
+//        allPages.loginPage().loginNameConfirmationText.isDisplayed();
+    }
 }
