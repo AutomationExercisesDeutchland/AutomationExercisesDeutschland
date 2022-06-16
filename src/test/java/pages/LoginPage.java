@@ -19,13 +19,6 @@ public class LoginPage {
     @FindBy(xpath = "//button[@type='submit'][1]")
     public WebElement loginButton;
 
-    @FindBy(xpath = "//input[@data-qa='signup-name'][1]")
-    public WebElement signupName;
-    @FindBy(xpath = "//input[@data-qa='signup-email'][1]")
-    public WebElement signupEmailAddress;
-    @FindBy(xpath = "//button[@data-qa='signup-button'][1]")
-    public WebElement signupButton;
-
 
     @FindBy(xpath = "//b[contains(text(),'Enter Account Information')]")
     public WebElement accountInformationText;

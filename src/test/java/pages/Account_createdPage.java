@@ -78,13 +78,17 @@ public class Account_createdPage {
     @FindBy(xpath = "//*[@class=Create Account]")
     public WebElement createAccountButton;
 
-    @FindBy(xpath = "//*[@class=continue]")
-    public WebElement continueButton;
-
     @FindBy(xpath = "//*[@href=/delete_account")
     public WebElement deleteAccountButton;
 
     @FindBy(xpath = "//*[@href=/logout")
     public WebElement logoutButton;
+
+    @FindBy(xpath = "//h2[(text()='New User Signup!')]")
+    public WebElement newUserSignupText;
+
+    @FindBy(xpath = "//a[(text()=' Signup / Login')]")
+    public WebElement signupLoginButton;
+
 
 }
