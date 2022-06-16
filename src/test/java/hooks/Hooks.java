@@ -33,9 +33,9 @@ public class Hooks {
             final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshots");
         }
-//         Driver.closeDriver();
+
         Driver.wait(1);
-       Driver.closeDriver();
+        Driver.closeDriver();
     }
 
     @Before(order = 1, value = "@user_register")

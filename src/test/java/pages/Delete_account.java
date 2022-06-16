@@ -13,7 +13,10 @@ public class Delete_account {
 
     }
 
-    @FindBy(linkText = " Delete Account")
+    @FindBy(xpath = "//a[(text()=' Delete Account')]")
     public WebElement deleteAccountButton;
+
+    @FindBy(xpath = "//body[contains(text),'ACCOUNT DELETED!']")
+    public WebElement deleteMessage;
 
 }

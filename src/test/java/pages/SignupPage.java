@@ -19,13 +19,16 @@ public class SignupPage {
     public WebElement newUserSignupText;
 
     @FindBy(css = "input[data-qa='signup-name']")
-    public WebElement SignUpNameBox;
+    public WebElement signUpNameBox;
 
     @FindBy(css = "input[data-qa='signup-email']")
-    public WebElement SignUpEmailAddressBox;
+    public WebElement signUpEmailAddressBox;
 
     @FindBy(xpath = "//button[contains(text(),'Signup')]")
     public WebElement signUpButton;
+
+    @FindBy(xpath = "//p[(text()='Email Address already exist!')]")
+    public WebElement alreadyExistEmailMessage;
 
 
     /* ================= ENTER ACCOUNT INFORMATION  ================= */
@@ -99,9 +102,17 @@ public class SignupPage {
     @FindBy(css = "input#mobile_number")
     public WebElement mobileNumberBox;
 
-
     @FindBy(css = "button[data-qa='create-account']")
     public WebElement createAccountButton;
+
+    @FindBy(xpath = "//b[contains(text(),'Account Created!')]")
+    public WebElement accountCreatedText;
+
+    @FindBy(xpath = "//a[contains(text(),'Continue')]")
+    public WebElement continueButton;
+
+    @FindBy(xpath = "//*[@id='header']/div/div/div/div[2]/div/ul/li[9]/a/b")
+    public WebElement loggedInAsButton;
 
 
     /* =================  Login to your account  ================= */
@@ -119,11 +130,9 @@ public class SignupPage {
     @FindBy(css = "button[data-qa='login-button']")
     public WebElement loginButton;
 
-    @FindBy(xpath = "//b[contains(text(),'Account Created!')]")
-    public WebElement accountCreatedBox;
 
-    @FindBy(xpath = "//a[contains(text(),'Continue')]")
-    public WebElement continueButton;
+
+
 
 
     /* ================= SUBSCRIPTION   =================  */
