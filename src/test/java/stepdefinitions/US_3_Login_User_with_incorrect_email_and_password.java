@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinitions;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Then;

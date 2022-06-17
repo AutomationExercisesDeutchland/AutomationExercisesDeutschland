@@ -1,12 +1,10 @@
-package stepdefinations;
+package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import pages.AllPages;
-import pages.Contact_usPage;
-import pages.HomePage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 

@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinitions;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
@@ -55,8 +55,8 @@ public class US_1_Register_User {
                 Assert.assertEquals(allPages.signupPage().accountCreatedText.getText(), string);
                 break;
             case "Logged in as username":
-                System.out.println("2a. isim : " + name);
-                System.out.println("2b. isim : " + allPages.signupPage().loggedInAsButton.getText());
+               // System.out.println("2a. isim : " + name);
+               // System.out.println("2b. isim : " + allPages.signupPage().loggedInAsButton.getText());
                 Thread.sleep(3000);
                 Assert.assertEquals(name, allPages.signupPage().loggedInAsButton.getText());
                 break;
