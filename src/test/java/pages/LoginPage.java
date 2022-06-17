@@ -76,4 +76,7 @@ public class LoginPage {
 
     @FindBy(xpath = "//b[contains(text(),'ali')]")
     public WebElement loginNameConfirmationText;
+
+    @FindBy(xpath="//p[contains(text(),'Your email or password is incorrect!')]")
+    public WebElement incorrectEmailAndPasswordText;
 }
