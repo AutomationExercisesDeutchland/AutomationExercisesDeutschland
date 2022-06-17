@@ -10,6 +10,7 @@ Feature: US_001_User_successfully_registers_on_the_website
     Given Click on Signup - Login button
     Then Verify that 'New User Signup!' is visible
     When Enter a name
+
     When Enter an email address
     And User click signup button
     Then Verify that 'ENTER ACCOUNT INFORMATION' is visible
