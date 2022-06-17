@@ -12,9 +12,9 @@ public class LoginPage {
 
 
 
-    @FindBy(xpath = "//input[@type='email'][1]")
+    @FindBy(xpath = "(//input[@type='email'])[1]")
     public WebElement loginEmailAddress;
-    @FindBy(xpath = "//input[@type='password'][1]")
+    @FindBy(xpath = "//input[@type='password']")
     public WebElement loginPassword;
     @FindBy(xpath = "//button[@data-qa='login-button']")
     public WebElement loginButton;
