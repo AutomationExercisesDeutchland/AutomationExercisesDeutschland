@@ -1,6 +1,6 @@
 @US04 @SmokeTest
 
-Feature: US_001_User_successfully_logout
+Feature: US_004_User_successfully_logout
 
   Background: User is on the Automation Exercise homepage
     Given User go to homepage

@@ -4,7 +4,7 @@ Feature: Login User with incorrect email and password
     Given User go to homepage
     Given Verify that home page is visible successfully
 
-Scenario: incorrect email and password
+Scenario: TC01 User cannot login with invalid email and password
 
   And Click on Signup - Login button
   Then Verify that 'Login to your account' is visible
