@@ -115,26 +115,6 @@ public class SignupPage {
     public WebElement loggedInAsButton;
 
 
-    /* =================  Login to your account  ================= */
-
-
-    @FindBy(xpath = "//h2[contains(text(),'Login to your account')]")
-    public WebElement loginToYourAccountText;
-
-    @FindBy(css = ".login-form input[type='email']")
-    public WebElement loginEmailAddressBox;
-
-    @FindBy(css = ".login-form input[type='password']")
-    public WebElement passwordBox;
-
-    @FindBy(css = "button[data-qa='login-button']")
-    public WebElement loginButton;
-
-
-
-
-
-
     /* ================= SUBSCRIPTION   =================  */
 
 

@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinitions;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
@@ -21,7 +21,6 @@ public class US_1_Register_User {
 
     @Given("User go to homepage")
     public void user_go_to_homepage() {
-
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
     }
@@ -34,7 +33,7 @@ public class US_1_Register_User {
     }
 
     @Given("Click on Signup - Login button")
-    public void click_on_signup_login_button() throws InterruptedException {
+    public void click_on_signup_login_button() {
 
         allPages.account_createdPage().signupLoginButton.click();
 
@@ -102,7 +101,7 @@ public class US_1_Register_User {
     }
 
     @Then("User fill: Title, Name, Email, a password {string}, Date of birth")
-    public void user_fill_title_name_email_a_password_date_of_birth(String password) throws InterruptedException {
+    public void user_fill_title_name_email_a_password_date_of_birth(String password) {
 
         allPages.signupPage().mrRadioButton.click();
         allPages.signupPage().infoPassword.sendKeys(password);
@@ -130,7 +129,7 @@ public class US_1_Register_User {
     }
 
     @When("Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
-    public void fill_details() throws InterruptedException {
+    public void fill_details() {
 
         allPages.signupPage().firstNameBox.sendKeys("yavuz");
         allPages.signupPage().lastNameBox.sendKeys("yüce");

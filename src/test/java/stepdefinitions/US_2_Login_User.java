@@ -1,4 +1,4 @@
-package stepdefinations;
+package stepdefinitions;
 
 import io.cucumber.java.en.*;
 import org.testng.Assert;

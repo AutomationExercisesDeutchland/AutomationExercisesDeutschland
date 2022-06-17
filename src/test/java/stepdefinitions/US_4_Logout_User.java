@@ -1,9 +1,8 @@
-package stepdefinations;
+package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import pages.AllPages;
-import utilities.Driver;
 
 public class US_4_Logout_User {
 
