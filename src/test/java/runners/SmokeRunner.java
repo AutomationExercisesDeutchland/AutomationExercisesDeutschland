@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        tags = "@View_and_update_by_doctor",
+        tags = "@SmokeTest",
         dryRun = false
 )
 public class SmokeRunner {

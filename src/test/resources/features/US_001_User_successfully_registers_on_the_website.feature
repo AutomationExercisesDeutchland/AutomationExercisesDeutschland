@@ -1,4 +1,4 @@
-@US1
+@US1 @SmokeTest
 
 Feature: US_001_User_successfully_registers_on_the_website
 
