@@ -1,5 +1,5 @@
 @US03 @SmokeTest
-Feature: Login User with incorrect email and password
+Feature: US_003_Login_User_with_incorrect_email_and_password
   Background: User is on the Automation Exercise homepage
     Given User go to homepage
     Given Verify that home page is visible successfully

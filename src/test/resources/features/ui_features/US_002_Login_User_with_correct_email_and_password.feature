@@ -1,5 +1,5 @@
 @US02 @SmokeTest
-Feature: US_004_Login_User_with_correct_email_and_password
+Feature: US_002_Login_User_with_correct_email_and_password
   Background: User is on the Automation Exercise homepage
     Given User go to homepage
     Given Verify that home page is visible successfully
