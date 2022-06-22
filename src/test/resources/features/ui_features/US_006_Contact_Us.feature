@@ -9,7 +9,7 @@ Scenario: TC_01-Contact_Us_Form
     Then User enter name,email,subject and message
     When User upload file
     Given User clicks submit button
-   # Given User clicks ok button
+    # //  Given User clicks ok button
     Given Verify success message is visible
     Then User clicks home button and verify to home page successfully
 
